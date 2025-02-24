@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
     <form id="login-form">
         <h2>Enter Your Name</h2>
         <label for="code">My Love:</label>
@@ -15,13 +16,14 @@
         <button id="submit-btn">Login</button>
     </form>
     <div id="result"></div>
+</div>
     <script>
         const form = document.getElementById('login-form')
         const codeInput = document.getElementById('code')
         const submitBtn = document.getElementById('submit-btn')
         const resultDiv = document.getElementById('result')
 
-        const secretCode = 'Pinku'
+        const secretCode = 'DevG'
         const nextPageUrl = 'main.html'
 
         form.addEventListener('submit', (e) => {
@@ -33,7 +35,7 @@
                 resultDiv.innerHTML='Baby'
                 window.location.href = nextPageUrl
             }else{
-                resultDiv.innerHTML ='Naaaahhhhh....Tum meri Butkuu nahi ho, Kon ho tum? kaha hai meri pinku'
+                resultDiv.innerHTML ='Naaaahhhhh....Tu mera yaar nahi ho, Kon ho tum? kaha hai mera DevG'
             }
         })
 

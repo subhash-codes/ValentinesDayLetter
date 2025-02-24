@@ -10,6 +10,15 @@ body {
     position: relative;
 }
 
+.container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    /* border: 2px solid black; */
+    width: 600px;
+}
+
 /* Heart-shaped form container */
 #login-form {
     background: linear-gradient(145deg, #ff4d79, #ff2357);
@@ -24,6 +33,19 @@ body {
     width: 400px;
     max-width: 100%;
     height: auto;
+
+    /* border: 2px solid green; */
+}
+
+
+
+#result {
+    /* border: 2px solid white; */
+    
+    font-size: 35px; 
+   
+    margin-top: 20px;
+    
 }
 
 #login-form.active {
